@@ -7,10 +7,17 @@ def solve():
 
     Yêu cầu dùng list comprehension.
     '''
-    result = []
+    result = None
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-
-
+    li = []
+    a = 1
+    while a <= 10:
+        for b in range(1, 10):
+            c = 24 - b - a
+            if a ** 2 + b ** 2 == c ** 2:
+                li.append([a, b, c])
+        a += 1
+    result = li
     return result
 
 

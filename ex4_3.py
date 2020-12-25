@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import string
+
+
 def solve(words):
     '''Trả về list chứa điểm tương ứng của các từ trong `words`
 
@@ -13,10 +15,13 @@ def solve(words):
       import string
       print(string.ascii_lowercase)
     '''
-
     result = None
-
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
+    words = string.ascii_lowercase
+    print(words)
+
+
+
 
     return result
 

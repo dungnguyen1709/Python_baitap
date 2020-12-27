@@ -20,9 +20,6 @@ def solve(words):
     words = string.ascii_lowercase
     print(words)
 
-
-
-
     return result
 
 

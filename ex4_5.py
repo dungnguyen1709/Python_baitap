@@ -10,14 +10,22 @@ def solve(numbers):
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
 
+    li = []
+    number = 0
+    multi = 1
+    for i in numbers:
+        number += i
+        multi *= i
+    li.append(number)
+    li.append(multi)
+    result = tuple(li)
     return result
 
 
 def main():
     # Cho list numbers chứa các giá trị từ -10 đến 10, trừ số 0.
-    numbers = range(-10, 11)
+    numbers = range(0, 10)
     numbers = list(numbers)
     numbers.remove(0)
 

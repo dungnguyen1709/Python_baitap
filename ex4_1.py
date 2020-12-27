@@ -36,7 +36,14 @@ def solve(ip):
     '''
     result = None
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+    list = []
+    for i in ip.split('.'):
+        if i not in '1':
+            list.append(bin(int(i))[2:])
+        else:
+            list.append(i.zfill(8))
+    result = ".".join(list)
+    return result
 
     return result
 

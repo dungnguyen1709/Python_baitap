@@ -27,11 +27,9 @@ def solve():
                                 for h in range(1, 10):
                                     for i in range(1, 10):
                                         if a + 13 * b / c + d + 12 * e - f - 11 + g * h / i - 10 == 66:
-                                            print("a, b, c, d, e, f, g, h, i = ", a, b, c, d, e, f, g, h, i)
                                             n += 1
-                                            print(n)
-                                            result = n
 
+    result = n
     return result
 
 

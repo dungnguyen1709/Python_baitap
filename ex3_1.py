@@ -36,7 +36,7 @@ def solve(input_data):
 
 
 def main():
-    print(solve(36))
+    print(solve(9))
 
 
 if __name__ == "__main__":

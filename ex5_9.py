@@ -3,7 +3,7 @@ data = [
     {'name': 'An Giang', 'population': 2153700, 'area': 3536.7, 'senator':
         10},
     {'name': 'Bà Rịa - Vũng Tàu', 'population': 1039200, 'area': 1989.5,
-        'senator': 6},
+     'senator': 6},
     {'name': 'Bạc Liêu', 'population': 873400, 'area': 2468.7, 'senator':
         6},
     {'name': 'Bắc Kạn', 'population': 301000, 'area': 4859.4, 'senator':
@@ -15,13 +15,13 @@ data = [
     {'name': 'Bến Tre', 'population': 1258500, 'area': 2357.7, 'senator':
         7},
     {'name': 'Bình Dương', 'population': 1748000, 'area': 2694.4,
-        'senator': 8},
+     'senator': 8},
     {'name': 'Bình Định', 'population': 1501800, 'area': 6050.6, 'senator':
         8},
     {'name': 'Bình Phước', 'population': 912700, 'area': 6871.5, 'senator':
         6},
     {'name': 'Bình Thuận', 'population': 1193500, 'area': 7812.8,
-        'senator': 7},
+     'senator': 7},
     {'name': 'Cà Mau', 'population': 1217100, 'area': 5294.9, 'senator':
         7},
     {'name': 'Cao Bằng', 'population': 515200, 'area': 6707.9, 'senator':
@@ -58,11 +58,11 @@ data = [
         6},
     {'name': 'Hưng Yên', 'population': 1145600, 'area': 926, 'senator': 7},
     {'name': 'TP. Hồ Chí Minh', 'population': 7681700, 'area': 2095.6,
-        'senator': 30},
+     'senator': 30},
     {'name': 'Khánh Hòa', 'population': 1183000, 'area': 5217.7, 'senator':
         7},
     {'name': 'Kiên Giang', 'population': 1726200, 'area': 6348.5,
-        'senator': 9},
+     'senator': 9},
     {'name': 'Kon Tum', 'population': 462400, 'area': 9689.6, 'senator':
         6},
     {'name': 'Lai Châu', 'population': 397500, 'area': 9068.8, 'senator':
@@ -90,21 +90,21 @@ data = [
     {'name': 'Quảng Bình', 'population': 857900, 'area': 8065.3, 'senator':
         6},
     {'name': 'Quảng Nam', 'population': 1450100, 'area': 10438.4,
-        'senator': 8},
+     'senator': 8},
     {'name': 'Quảng Ngãi', 'population': 1227900, 'area': 5153, 'senator':
         7},
     {'name': 'Quảng Ninh', 'population': 1177200, 'area': 6102.3,
      'senator': 7},
     {'name': 'Quảng Trị', 'population': 608100, 'area': 4739.8, 'senator':
-     6},
+        6},
     {'name': 'Sóc Trăng', 'population': 1301900, 'area': 3311.6, 'senator':
-     7},
+        7},
     {'name': 'Sơn La', 'population': 1134300, 'area': 14174.4, 'senator':
-     7},
+        7},
     {'name': 'Tây Ninh', 'population': 1089900, 'area': 4039.7, 'senator':
-     6},
+        6},
     {'name': 'Thái Bình', 'population': 1868800, 'area': 1570, 'senator':
-     9},
+        9},
     {'name': 'Thái Nguyên', 'population': 1150200, 'area': 3534.7,
      'senator': 7},
     {'name': 'Thanh Hóa', 'population': 3426600, 'area': 11132.2,
@@ -114,13 +114,13 @@ data = [
     {'name': 'Tiền Giang', 'population': 1692500, 'area': 2508.3,
      'senator': 8},
     {'name': 'Trà Vinh', 'population': 1015300, 'area': 2341.2, 'senator':
-     6},
+        6},
     {'name': 'Tuyên Quang', 'population': 738900, 'area': 5867.3,
      'senator': 5},
     {'name': 'Vĩnh Long', 'population': 1033600, 'area': 1504.9, 'senator':
-     6},
+        6},
     {'name': 'Vĩnh Phúc', 'population': 1020600, 'area': 1236.5, 'senator':
-     6},
+        6},
     {'name': 'Yên Bái', 'population': 764400, 'area': 6886.3, 'senator': 7}
 ]
 
@@ -138,7 +138,7 @@ def solve(input_data):
     provinces_more_than_1m = []
 
     # Xoá dòng raise và Viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+
 
     result = (provinces_startswith_h, provinces_more_than_1m)
     return result

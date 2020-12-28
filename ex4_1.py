@@ -43,7 +43,7 @@ def solve(ip):
         else:
             list.append(i.zfill(8))
     result = ".".join(list)
-    return result
+
 
     return result
 

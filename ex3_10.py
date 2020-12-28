@@ -15,8 +15,10 @@ def solve(list1, list2):
     result = []
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    for i in list1:
+        for j in list2:
+            if i == j:
+                print(i)
     return result
 
 

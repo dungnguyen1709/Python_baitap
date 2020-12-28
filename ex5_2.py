@@ -46,8 +46,20 @@ def solve(last_year_data):
     result = []
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    language = []
+    for stu in data:
+        if stu.get("name") == "Hoang":
+            language = list(stu.get("languages"))
+            stu["languages"].append("Elixir")
+        else:
+            stu["languages"] = language
+        if stu.get("name") == "Duy":
+            stu.pop("girl_friend")
+        if stu.get("name") == "Tu":
+            stu["girl_friend"] = "Do Anh"
+    result = data
+    for i in data:
+        print(i)
     return result
 
 

@@ -14,10 +14,11 @@ def solve(input_data):
        2      10     0o2     0x2
        ...
     '''
-    result = None
+    result = []
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
+    for i in input_data:
+        print(str(i).rjust(8), bin(i)[2:].rjust(8), oct(i).rjust(8), hex(i).rjust(8))
 
     return result
 

@@ -21,11 +21,11 @@ def solve(year):
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     thiencan = [
-        'canh', 'tân', 'nhâm', 'quý',
-        'giáp', 'ất', 'bính', 'đinh', 'mậu', 'kỷ']
+        'Canh', 'Tân', 'Nhâm', 'Quý',
+        'Giáp', 'Ất', 'Bính', 'Đinh', 'Mậu', 'Kỷ']
 
-    diachi = ['tý', 'sửu', 'dần', 'mão', 'thìn', 'tị', 'ngọ', 'mui', 'thân', 'dậu',
-              'tuất', 'hợi']
+    diachi = ['Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tị', 'Ngọ', 'Mùi', 'Thân', 'Dậu',
+              'Tuất', 'Hợi']
     can = thiencan[int(str(year)[-1])]
     chi = diachi[year % 12 - 4]
     result = (year, can + ' ' + chi)
@@ -34,7 +34,7 @@ def solve(year):
 
 
 def main():
-    print("Năm {0} là năm {1}".format(*solve(2017)))
+    print("Năm {0} là năm {1}".format(*solve(2015)))
 
 
 if __name__ == "__main__":

@@ -20,11 +20,17 @@ def solve(input_data):
     Hàm có sẵn tạo ra integer từ string: 69 == int('69')
     '''
 
-    result = None
-    # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    if input_data == 0:
-        return '0'
-    return '1' + bin(input_data).split('1')[-1]
+    result = []
+    input_binary = str(bin(input_data))
+
+    return_string = ''
+    for i in input_binary[::-1]:
+        return_string += i
+        if i == '1':
+            break
+
+    # print(return_string)
+    result = int(return_string[::-1])
 
     # while (input_data >= 1):
     #     item = input_data % 2
@@ -36,7 +42,7 @@ def solve(input_data):
 
 
 def main():
-    print(solve(9))
+    print(solve(1))
 
 
 if __name__ == "__main__":

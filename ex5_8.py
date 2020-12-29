@@ -2,7 +2,6 @@
 
 
 def solve():
-
     '''Trả về biểu diễn của 20 mã ASCII từ 33 đến 53 theo format
     [(33, BIEUDIENCUA33), ...]
     Unicode codepoint của các số từ 0->9, a-z, A-Z.
@@ -17,8 +16,18 @@ def solve():
     unicodes = []
 
     # Xoá dòng raise và Viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+    import string
+    num_letter = string.digits + string.ascii_letters
 
+    for i in num_letter:
+        unicodes.append((i, ord(i)))
+
+    for j in range(33,53):
+        twenty_ascii.append((j, chr(j)))
+
+    tabcodepoint = ord('\t')
+    newlinecodepoint = ord('\n')
+    spacecodepoint = ord(' ')
     result = (twenty_ascii, unicodes, tabcodepoint,
               newlinecodepoint,
               spacecodepoint)

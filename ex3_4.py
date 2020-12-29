@@ -22,8 +22,9 @@ def solve(input_data):
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    input_data = 'maria.data.mp9'
-    print(input_data[:10])
+    texts = input_data.split('.')
+    texts.pop()
+    result = '.'.join(texts)
 
     return result
 

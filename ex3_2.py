@@ -31,8 +31,17 @@ def solve(text):
     for i in range(len(text)):
         if text[i].isupper():
             li.append(text[i])
-    result = ''.join(li)
+    result = ''.join(li).lower().capitalize()
 
+    # texts = [text.split('\n')]
+    #
+    # first_chars = []
+    # for line in texts[0]:
+    #     if len(line) > 0:
+    #         print(line.split()[0])
+    #         first_chars.append(line.split()[0][0])
+    # # print(first_chars)
+    # result = "".join(first_chars).lower().capitalize()
     return result
 
 

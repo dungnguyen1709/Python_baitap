@@ -16,9 +16,8 @@ def solve(list1, list2):
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
     for i in list1:
-        for j in list2:
-            if i == j:
-                print(i)
+        if i in list2:
+            result.append(i)
     return result
 
 

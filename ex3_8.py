@@ -14,9 +14,11 @@ def solve(text):
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-
-    print(list(reversed(text)))
-
+    text = text.strip()
+    if len(text) > 1:
+        result = text[::-1].lower() == text.lower()
+    else:
+        return False
     return result
 
 

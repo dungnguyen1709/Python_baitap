@@ -16,20 +16,27 @@ def solve():
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    n = 0
-    for a in range(1, 10):
-        for b in range(1, 10):
-            for c in range(1, 10):
-                for d in range(1, 10):
-                    for e in range(1, 10):
-                        for f in range(1, 10):
-                            for g in range(1, 10):
-                                for h in range(1, 10):
-                                    for i in range(1, 10):
-                                        if a + 13 * b / c + d + 12 * e - f - 11 + g * h / i - 10 == 66:
-                                            n += 1
+    num = []
+    for f in range(1, 10):
+        for a in range(1, 10):
+            for d in range(1, 10):
+                for e in range(1, 10):
+                    rhs = 87 + f - a - d - e * 12
+                    if rhs <= 0:
+                        break
+                    else:
+                        for c in range(1, 10):
+                            for i in range(1, 10):
+                                for b in range(1, 10):
+                                    rhs2 = rhs * i * c - 13 * b * i
+                                    if (b * i) % c == 0 and rhs2 > 0:
+                                        for h in range(1, 10):
+                                            for g in range(1, 10):
+                                                if g * h * c == rhs2:
+                                                    num.append((a, b, c, d, e, f, g, h, i))
 
-    result = n
+    result = len(num)
+
     return result
 
 

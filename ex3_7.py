@@ -21,9 +21,9 @@ def solve():
 
     # result = ['{} == {} * 5'.format(num, int(num / 5)) for num in range(0, 100, 5)]
 
-    for i in range(0, 100, 5):
+    for i in range(1, 100):
         if i % 5 == 0:
-            print(i, '==', int(i / 5), '* 5')
+            result.append(f'{i} == {int(i / 5)} * 5')
 
     return result
 

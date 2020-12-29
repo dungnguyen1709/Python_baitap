@@ -18,17 +18,18 @@ def solve(words):
     result = []
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    sum = 0
+    string_str = string.ascii_lowercase
     for word in words:
-        for char in word.lower():
-            num = ord(char) - 96
-            sum += num
-        result.append(sum)
+        total = 0
+        for char in word:
+            total += (string_str.index(char.lower()) + 1)
+        result.append(total)
     return result
 
 
 def main():
-    words = ['abcd']
+    words = ['numpy', 'django', 'saltstack', 'discipline',
+             'Python', 'FAMILUG', 'pymi']
 
     print(solve(words))
 

@@ -36,15 +36,20 @@ def solve(ip):
     '''
     result = None
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    list = []
-    for i in ip.split('.'):
-        if i not in '1':
-            list.append(bin(int(i))[2:])
-        else:
-            list.append(i.zfill(8))
-    result = ".".join(list)
+    # li = []
+    # for i in ip.split('.'):
+    #     if i not in '1':
+    #         list.append(bin(int(i))[2:])
+    #     else:
+    #         list.append(i.zfill(8))
+    # result = ".".join(list)
 
-
+    li = [bin(int(i))[2:] for i in ip.split('.')]
+    for i in range(0, len(li)):
+        if len(li[i]) < 8:
+            # print(i.zfill(8))
+            li[i] = li[i].zfill(8)
+    result = ('.').join(li)
     return result
 
 

@@ -21,6 +21,15 @@ def solve(input_data):
     top = c.most_common(10)
     result = top
     print(result)
+
+    # freq = {}
+    # line = input_data
+    # for word in line.split():
+    #     freq[word] = freq.get(word, 0) + 1
+    # words = sorted(freq.keys())
+    # for w in words:
+    #     result.append((w, freq[w]))
+    # print(result)
     return result
 
 

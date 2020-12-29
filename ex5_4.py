@@ -17,9 +17,9 @@ def solve(output_path):
     with open(output_path, 'w') as file:
         for i in range(1, NUMBER_OF_LINES + 1):
             if i % 2 != 0:
-                file.write("1111111111111111111111111111111111\n")
+                file.write("111111111111111111111111111111\n")
                 if i > NUMBER_OF_LINES - 10:
-                    result.append("1111111111111111111111111111111111\n")
+                    result.append("111111111111111111111111111111\n")
             else:
                 file.write(f"{i * 2}\n")
                 if i > NUMBER_OF_LINES - 10:

@@ -24,7 +24,7 @@ def solve(year):
         'Canh', 'Tân', 'Nhâm', 'Quý',
         'Giáp', 'Ất', 'Bính', 'Đinh', 'Mậu', 'Kỷ']
 
-    diachi = ['Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tị', 'Ngọ', 'Mùi', 'Thân', 'Dậu',
+    diachi = ['Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tị', 'Ngọ', 'Mui', 'Thân', 'Dậu',
               'Tuất', 'Hợi']
     can = thiencan[int(str(year)[-1])]
     chi = diachi[year % 12 - 4]

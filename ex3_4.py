@@ -30,7 +30,8 @@ def solve(input_data):
 
 
 def main():
-    input_data = 'maria.data.mp9'
+    # input_data = 'maria.data.mp9'
+    input_data = '....slsslslsls...sls'
     print(solve(input_data))
 
 

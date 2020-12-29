@@ -22,13 +22,18 @@ def solve():
     result = []
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    a = 9
-    while a > 0:
-        d = 10 - a
-        for c in range(1, int(9/d) + 1):
-            b = d * c
-            result.append([a, b, c])
-        a -= 1
+    # a = 9
+    # while a > 0:
+    #     d = 10 - a
+    #     for c in range(1, int(9 / d) + 1):
+    #         b = d * c
+    #         result.append([a, b, c])
+    #     a -= 1
+    for a in range(9, 0, -1):
+        for b in range(1, 10):
+            for c in range(1, 10):
+                if (a + b / c) == 10:
+                    result.append([a, b, c])
     return result
 
 

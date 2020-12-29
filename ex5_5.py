@@ -24,8 +24,16 @@ def solve(students, N=5):
 
     result = []
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    raise NotImplementedError("Học viên chưa làm bài này")
-
+    for name in data:
+        if name[0] == "D":
+            result.append((hash(name) % MAGIC_NUMBER, name, 1990, N))
+        elif name[0] == "H":
+            result.append((hash(name) % MAGIC_NUMBER, name, 1990, N + 1))
+        elif name[-2:] == "ng":
+            result.append((hash(name) % MAGIC_NUMBER, name, 1990, N + 1))
+        else:
+            result.append((hash(name) % MAGIC_NUMBER, name, 1990, N))
+    result = sorted(result, key= lambda stu: stu[1])
     return result
 
 
